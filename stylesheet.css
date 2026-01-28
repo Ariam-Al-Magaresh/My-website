@@ -1,0 +1,112 @@
+/* Algemene instellingen */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    text-align: center;
+    color: #333;
+}
+
+/* Navigatiemenu */
+nav {
+    background: #333;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* Taalknop */
+.lang-btn {
+    background: #ffc107;
+    color: black !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Container voor de inhoud */
+.container {
+    background: white;
+    width: 60%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Profielfoto instellingen */
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #5b5c51;
+    margin-bottom: 20px;
+}
+
+/* Tekst en Lijsten */
+.info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.hobby-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+/* Formulier en Knoppen */
+input, textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.msg-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 10px;
+}
+
+/* Responsive design voor mobiel */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+}
